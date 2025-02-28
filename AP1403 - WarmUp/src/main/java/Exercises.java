@@ -26,7 +26,18 @@ public class Exercises {
         if the input is not a fibonacci number with description above, return -1
      */
     public long fibonacciIndex(long n) {
-        // todo
+        long x=0 , y=1 , i=0, temp=0;
+        while(x<=n)
+        {
+            if(x==n)
+            {
+                return i;
+            }
+            temp=y;
+            y+=x;
+            x=temp;
+            i++;
+        }
         return -1;
     }
 
